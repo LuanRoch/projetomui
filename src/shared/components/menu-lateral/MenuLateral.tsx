@@ -66,7 +66,7 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({ children }) => {
                                     to={drawerOptions.path}
                                     onClick={smDown ? toggleDrawerOpen : undefined}
                                 />
-                            ))};
+                            ))}
                         </List>
                     </Box>
                 </Box>
