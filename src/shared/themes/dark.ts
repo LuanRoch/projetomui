@@ -26,6 +26,6 @@ export const darkTheme = createTheme({
     typography:{
         allVariants: {
             color: 'white'
-        }
+        } 
     }
 })
