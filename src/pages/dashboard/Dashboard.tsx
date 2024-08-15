@@ -1,18 +1,24 @@
-import { FerramentasDaListagem } from "../../shared/components";
+import { Button, TextField } from "@mui/material";
+import {FerramentaDeDetalhes} from "../../shared/components";
 import { LayoutBaseDePagina } from "../../shared/layout";
+import { Typography } from "@mui/material/styles/createTypography";
 
 
 export const Dashboard = () => {
+
+
     return(
        <LayoutBaseDePagina 
        titulo="Pagina inicial" 
        BarraDeFerramenta = {(
-        <FerramentasDaListagem
-        mostrarInputBusca
-        textoBotaoNovo="Novo"
+        <FerramentaDeDetalhes mostrarBotaoSalvarEFechar mostrarBotaoNovo 
+        
         />
        )}>
-        testando
-       </LayoutBaseDePagina> 
+        <TextField
+                    placeholder=""
+                />
+      
+      </LayoutBaseDePagina> 
     );
 }
