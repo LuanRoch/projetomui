@@ -20,7 +20,7 @@ export const FerramentasDaListagem: React.FC<IFerramentasDaListagemProps> = ({
 
     textoDaBusca = '',
     aoMudartextoBusca,
-    mostrarInputBusca = false,
+    mostrarInputBusca = true,
 
     aoClicarEmNovo,
     textoBotaoNovo = 'Novo',
@@ -46,7 +46,7 @@ export const FerramentasDaListagem: React.FC<IFerramentasDaListagemProps> = ({
                     placeholder={Environment.INPUT_DE_BUSCA}
                 />
             )}
-            <Box flex={1} display='flex' justifyContent='end'>
+            <Box flex={1} display='flex' justifyContent='start'>
 
                 {mostrarBotaoNovo &&(
                     <Button
@@ -54,7 +54,7 @@ export const FerramentasDaListagem: React.FC<IFerramentasDaListagemProps> = ({
                         disableElevation
                         variant="contained"
                         onClick={aoClicarEmNovo}
-                        endIcon={<Icon>add</Icon>}>
+                        startIcon={<Icon>send</Icon>}>
                         {textoBotaoNovo}
                     </Button>
                 )}
