@@ -27,9 +27,6 @@ export const AppRoutes = () => {
     <Routes>
       <Route path="/ListaCnpj" element={<ListaCnpj/>} />
       <Route path="*" element={<Navigate to="/ListaCnpj" />} />
-
-
-      
     </Routes>
   )
 }

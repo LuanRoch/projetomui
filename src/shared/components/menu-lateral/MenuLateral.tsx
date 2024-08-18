@@ -2,7 +2,7 @@ import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, List
 import { Box } from '@mui/system';
 import { useAppContext, useDrawerContext } from "../../contexts";
 import { useMatch, useNavigate, useResolvedPath } from "react-router-dom";
-import { DarkMode } from "@mui/icons-material";
+
 
 interface IListItemLinkProps {
     to: string;
@@ -32,10 +32,6 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ to, icon, label, onClick }
 
     );
 };
-
-
-
-
 interface IMenuLateralProps {
     children: React.ReactNode;
 }

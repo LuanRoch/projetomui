@@ -19,18 +19,18 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({ childre
     const { toggleDrawerOpen } = useDrawerContext();
     return (
         <Box height='100%' display='flex' flexDirection='column' gap={1}>
-            <Box display='flex' alignItems='center' padding={1}  gap={1} height={theme.spacing(smDown ? 6 : mdDown ? 8 : 12 )} >
+            <Box display='flex' alignItems='center' padding={1} gap={1} height={theme.spacing(smDown ? 6 : mdDown ? 8 : 12)} >
 
                 {smDown && (<IconButton onClick={toggleDrawerOpen} >
                     <Icon>menu</Icon>
                 </IconButton>
                 )}
-                <Typography 
-                textOverflow='ellipsis'
-                overflow='hidden'
-                whiteSpace='nowrap'
-                variant={smDown ? 'h5' : mdDown ? 'h4' : 'h3'}
-                
+                <Typography
+                    textOverflow='ellipsis'
+                    overflow='hidden'
+                    whiteSpace='nowrap'
+                    variant={smDown ? 'h5' : mdDown ? 'h4' : 'h3'}
+
                 >
                     {titulo}
                 </Typography>
