@@ -7,7 +7,7 @@ Este projeto é uma aplicação web desenvolvida com ReactJS, TypeScript, Axios 
 ## Funcionalidades
 
 - **Busca de CNPJ**: Permite ao usuário inserir um número de CNPJ para buscar informações da empresa.
-- **Exibição de Dados**: Mostra os dados da empresa, incluindo nome, razão social e informações dos sócios.
+- **Exibição de Dados**: Mostra os dados da empresa, incluindo nome, razão social etc... 
 - **Formulário Editável**: Permite editar e salvar os dados da empresa.
 - **Confirmação de Salvamento**: Exibe uma mensagem de confirmação quando os dados são salvos com sucesso.
 
